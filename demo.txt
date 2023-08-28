@@ -1,0 +1,39 @@
+Jerry added
+- URI: https://app.com/jerrycan101
+- name: Jerrycan101
+Jerry added
+- URI: https://app.com/jerrycan101
+- name: Jerrycan101
+
+Jerry adds a CreateActivity to Outbox
+- URI: https://app.com/jerrycan101/post
+- audience: GLOBAL
+- like: 0
+- shares: 0
+- content: This is the first post in Javaverse!
+- name: First Post!
+- published: null
+- deleted: false
+
+JerryOutbox delivery
+- https://app.com/jerrycan101/post posted
+
+Jerry adds a FollowActivity to Outbox
+- URI: https://app.com/jerrycan101/follow
+- actor: https://app.com/jerrycan101
+- object: https://app.com/tommygun444
+
+
+Jerry Outbox delivery
+- https://app.com/jerrycan101/follow
+- added https://app.com/tommygun444 to following list
+
+Tom Inbox delivery
+-https://app.com/jerrycan101/follow
+
+Tom reads a FollowActivity from Inbox
+- URI: https://app.com/jerrycan101/follow
+- actor: https://app.com/jerrycan101
+- object: https://app.com/tommygun444
+
+End
